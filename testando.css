@@ -1,0 +1,10 @@
+.videozinho {
+  max-width: 50%;
+  display: block;
+  margin: 10px 0;
+}
+button {
+  font-size: 15px;
+  color: aliceblue;
+  background-color: rgb(139, 167, 167);
+}
