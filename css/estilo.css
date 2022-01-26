@@ -155,6 +155,10 @@ main {
   main {
     box-shadow: none;
   }
+  .conteudo {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 @media (max-width: 600px) {
   .conteudo {
