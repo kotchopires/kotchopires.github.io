@@ -1,11 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
+  background: #000000;
   display: grid;
   gap: 60px;
   justify-items: center;
-  margin-top: 60px;
+  position: relative;
 }
 img {
   max-width: 100%;
@@ -29,6 +29,19 @@ p {
   font-size: 1.25rem;
   line-height: 1.3;
 }
+.card {
+  max-width: 100%;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+}
+.card video {
+  max-width: 100%;
+  opacity: 30%;
+}
 .menu {
   display: flex;
   gap: 20px;
@@ -39,6 +52,7 @@ p {
   display: grid;
   justify-items: center;
   gap: 60px;
+  margin-top: 20px;
 }
 .menu a {
   background: #ffffff;
@@ -61,7 +75,8 @@ p {
 }
 
 .introducao {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: saturate(60%) blur(3px);
   padding: 40px;
   text-align: right;
   position: relative;
@@ -104,15 +119,16 @@ p {
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.205);
+  color: rgba(255, 255, 255, 0.605);
   text-align: right;
   padding: 40px;
   align-self: center;
-  background: url("/imagens/onda.svg");
+  /* background: url("/imagens/onda.svg"); */
   /* word-break: break-all; */
 }
 .vantagens {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: saturate(60%) blur(3px);
   padding: 40px;
 }
 .vantagens-item {
@@ -124,7 +140,9 @@ p {
 }
 
 .vantagens-item:nth-child(odd) {
-  background: #f7f7f7;
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: saturate(180%) blur(400px);
+  -webkit-backdrop-filter: saturate(180%) blur(400px);
 }
 
 .vantagens-item:hover {
@@ -140,6 +158,7 @@ p {
   padding: 40px;
   box-sizing: border-box;
   font-weight: 700;
+  border-top: 10px solid #e21;
 }
 main {
   box-shadow: -1px 4px 5px rgba(53, 53, 53, 0.233);
