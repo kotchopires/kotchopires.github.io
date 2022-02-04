@@ -3,7 +3,7 @@ body {
   margin: 0px;
   background: #000000;
   display: grid;
-  gap: 60px;
+  gap: 65px;
   justify-items: center;
   position: relative;
 }
