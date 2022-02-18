@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="testando.min.css">
+  <link rel="stylesheet" href="testando.css">
   <link rel="icon" href="imagens/eletrica.svg" type="image/svg+xml">
   <title>testando</title>
 
 </head>
 
 <body>
-
 
   <main id="principal" aria-label="main">
     <h1>Surf Shop Bahia</h1>
@@ -27,7 +26,52 @@
     </article>
   </main>
 
+  <div class="formulario">
+    <form action="testando.html" method="">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="nome">
 
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha">
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade">
+
+      <label for="nascimento">Idade:</label>
+      <input type="date" id="nascimento" name="nascimento">
+
+      <div class="marca">
+        <span>Qual o Seu Hobby predileto ?</span>
+
+
+        <input type="checkbox" name="hobby" id="hobby" value="surf">
+        <label for="hobby">Surf</label>
+
+        <input type="checkbox" name="hobby" id="hobby" value="boxe">
+        <label for="hobby">Boxe</label>
+
+        <input type="checkbox" name="hobby" id="hobby" value="futebol">
+        <label for="hobby">futebol</label>
+      </div>
+      <div class="marca">
+        <span>Qual o Seu time do coração ?</span>
+
+
+        <input type="radio" name="time" id="time" value="Bahia">
+        <label for="time">Bahia</label>
+
+        <input type="radio" name="time" id="time" value="Vitoria">
+        <label for="time">Vitoria</label>
+
+        <input type="radio" name="time" id="time" value="Roma">
+        <label for="time">Roma</label>
+      </div>
+      <button>Enviar</button>
+    </form>
+  </div>
 
 </body>
 
